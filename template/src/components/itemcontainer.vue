@@ -11,7 +11,6 @@
     <div v-if="fatherComponent == 'item'">
       <div class="item_back item_container_style">
         <div class="item_list_container" v-if="itemDetail.length > 0">
-          <header class="item_title">{{itemDetail[itemNum-1].topic_name}}</header>
           <ul>
             <!-- eslint-disable-next-line max-len -->
             <li v-for="(item, index) in itemDetail[itemNum-1].topic_answer" :key="index" @click="choosed(index, item.topic_answer_id)" class="item_list">
