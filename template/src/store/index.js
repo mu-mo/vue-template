@@ -1,15 +1,19 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import mutations from './mutations';
-import actions from './actions';
-import state from './state';
+import user from '@/store/modules/user';
+import index from '@/store/modules/index';
+import createLogger from '@/util/logger';
+import '@/common/common.scss';
 
 Vue.use(Vuex);
 
+const debug = process.env.NODE_ENV !== 'production';
 
 export default new Vuex.Store({
-  state,
-  getters,
-  actions,
-  mutations,
+  modules: {
+    index,
+    user,
+  },
+  strict: debug,
+  plugins: debug ? [createLogger()] : [],
 });

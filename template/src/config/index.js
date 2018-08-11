@@ -1,5 +1,6 @@
+
 export default {
   URL: {
-    baseURL: 'https://some-domain.com/api/v1',
+    baseURL: 'https://weixin.bingyan-tech.hustonline.net/weixin-login/api/v1',
   },
 };
