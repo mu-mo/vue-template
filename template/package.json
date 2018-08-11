@@ -31,8 +31,6 @@
     "axios": "^0.18.0"
   },
   "devDependencies": {
-    "less": "^3.8.1",
-    "less-loader": "^4.1.0",
     "node-sass": "^4.9.3",
     "sass-loader": "^7.1.0",
     {{#lint}}
